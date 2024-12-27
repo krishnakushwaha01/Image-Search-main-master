@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.name{
+    margin: 10px;
+    font-weight: 600;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    margin-top: 3rem;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 60px;
+}
+
+
+
+form {
+    margin-top: 20px;
+}
+
+#input-search {
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+#search-btn {
+    padding: 10px 25px;
+    background-color: rgb(16, 85, 4);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    opacity: .7;
+}
+
+#image-input {
+    width: 100%;
+    padding: 50px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.image-inputs {
+    width: calc(30% - 20px);
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-inputs img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.image-inputs img:hover {
+    opacity: 0.8;
+}
+
+.image-inputs a {
+    display: block; 
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 10px;
+    text-align: center; 
+    text-transform: capitalize;
+}
+
+#show {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: rgb(16, 85, 4);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    #image-input .image-inputs {
+        width: calc(50% - 20px); 
+    }
+
+    .image-inputs a {
+        font-size: 14px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #image-input .image-inputs {
+        width: calc(100% - 1px); 
+        
+    }
+}
